@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the best online games at Yunqi.it.com - Enjoy Monster Survivors and other exciting games. Experience thrilling gameplay and endless entertainment!">
+    <title>Yunqi.it.com - Best Online Games Collection</title>
+    <link rel="canonical" href="https://yunqi.it.com" />
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-gray: #8E8E93;
+            --apple-background: #F5F5F7;
+            --apple-text: #1D1D1F;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--apple-text);
+            background-color: var(--apple-background);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--apple-blue);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--apple-text);
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--apple-background);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--apple-blue), #5856D6);
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .game-intro {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .featured-game {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .game-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .game-card-content {
+            padding: 15px;
+        }
+
+        .game-card h3 {
+            color: var(--apple-blue);
+            margin-bottom: 10px;
+        }
+
+        .game-card p {
+            font-size: 0.9em;
+            color: var(--apple-gray);
+            margin-bottom: 15px;
+        }
+
+        .play-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--apple-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .play-button:hover {
+            background: #0056b3;
+        }
+
+        h2 {
+            color: var(--apple-blue);
+            margin: 30px 0 15px;
+            font-size: 1.8em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            header {
+                padding: 20px 0;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .game-frame {
+                height: 400px;
+            }
+
+            .game-intro {
+                font-size: 1em;
+            }
+
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">Yunqi.it.com</a>
+            <div class="nav-links">
+                <a href="#featured">Featured Game</a>
+                <a href="#all-games">All Games</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Welcome to Yunqi.it.com</h1>
+            <p class="game-intro">Your ultimate destination for the best online games!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="featured">
+            <h2>Featured Game</h2>
+            <div class="featured-game">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                        class="game-frame" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="all-games">
+            <h2>Popular Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Monster Survivors">
+                    <div class="game-card-content">
+                        <h3>Monster Survivors</h3>
+                        <p>Survive endless waves of monsters in this thrilling action-packed adventure!</p>
+                        <a href="/monster-survivors" class="play-button">Play Now</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Tank Battle">
+                    <div class="game-card-content">
+                        <h3>Tank Battle</h3>
+                        <p>Strategic tank warfare game with multiple maps and upgradeable vehicles</p>
+                        <a href="/tank-battle" class="play-button">Play Now</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Puzzle Master">
+                    <div class="game-card-content">
+                        <h3>Puzzle Master</h3>
+                        <p>Challenge your brain with this addictive puzzle game</p>
+                        <a href="/puzzle-master" class="play-button">Play Now</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Racing Fever">
+                    <div class="game-card-content">
+                        <h3>Racing Fever</h3>
+                        <p>High-speed racing action with stunning graphics</p>
+                        <a href="/racing-fever" class="play-button">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Game Categories</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Action Games">
+                    <div class="game-card-content">
+                        <h3>Action Games</h3>
+                        <p>Fast-paced games that test your reflexes and skills</p>
+                        <a href="/category/action" class="play-button">View Games</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Strategy Games">
+                    <div class="game-card-content">
+                        <h3>Strategy Games</h3>
+                        <p>Games that challenge your tactical thinking</p>
+                        <a href="/category/strategy" class="play-button">View Games</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Puzzle Games">
+                    <div class="game-card-content">
+                        <h3>Puzzle Games</h3>
+                        <p>Brain-teasing games to test your problem-solving skills</p>
+                        <a href="/category/puzzle" class="play-button">View Games</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Racing Games">
+                    <div class="game-card-content">
+                        <h3>Racing Games</h3>
+                        <p>High-speed racing and driving challenges</p>
+                        <a href="/category/racing" class="play-button">View Games</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Educational Games">
+                    <div class="game-card-content">
+                        <h3>Educational Games</h3>
+                        <p>Learn while having fun with these educational games</p>
+                        <a href="/category/educational" class="play-button">View Games</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Multiplayer Games">
+                    <div class="game-card-content">
+                        <h3>Multiplayer Games</h3>
+                        <p>Play with friends in these exciting multiplayer games</p>
+                        <a href="/category/multiplayer" class="play-button">View Games</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-releases">
+            <h2>New Releases</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Space Adventure">
+                    <div class="game-card-content">
+                        <h3>Space Adventure</h3>
+                        <p>Explore the vast universe in this new space exploration game</p>
+                        <a href="/space-adventure" class="play-button">Play Now</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://via.placeholder.com/300x160" alt="Zombie Defense">
+                    <div class="game-card-content">
+                        <h3>Zombie Defense</h3>
+                        <p>Defend your base against waves of zombies</p>
+                        <a href="/zombie-defense" class="play-button">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
